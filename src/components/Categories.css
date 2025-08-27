@@ -1,0 +1,164 @@
+.categories {
+  padding: 60px 20px;
+  background: #f4f9f4;
+  text-align: center;
+}
+
+.category-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #4a4a4a;
+  font-size: 16px;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cat-card {
+  width: 230px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.cat-front,
+.cat-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.cat-front {
+  transform: rotateY(0deg);
+}
+
+.cat-back {
+  transform: rotateY(180deg);
+  background: #f0f0f0;
+  color: #333;
+}
+
+.cat-card.flipped .cat-front {
+  transform: rotateY(180deg);
+}
+
+.cat-card.flipped .cat-back {
+  transform: rotateY(0deg);
+}
+
+.cat-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.cta-btn {
+  margin-top: 40px;
+  background: #39b46e;
+  color: #fff;
+  padding: 14px 28px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #2f9155;
+}
+
+/* Modal overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.3s ease;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal title */
+.modal-content h3 {
+  margin-bottom: 15px;
+  color: #2d572c;
+}
+
+/* List inside modal */
+.modal-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Close button */
+.modal-content button {
+  padding: 10px 20px;
+  background-color: #3a7a44;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.modal-content button:hover {
+  background-color: #2d572c;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px;
+  }
+  .modal-content ul {
+    padding-left: 15px;
+  }
+}

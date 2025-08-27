@@ -1,0 +1,163 @@
+/* ====== General Layout ====== */
+.gallery-section {
+  padding: 50px 20px;
+  background: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.lead {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ====== Filters ====== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-group span {
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-group button {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.filter-group button:hover {
+  background: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}
+
+.filter-group button.active {
+  background: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}
+
+/* ====== Gallery Grid ====== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ====== Card Styling ====== */
+.gallery-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ====== Image Container (Before/After Hover Effect) ====== */
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.before-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.after-img {
+  opacity: 1;
+}
+
+.image-container:hover .before-img {
+  opacity: 0;
+}
+
+.image-container:hover .after-img {
+  transform: scale(1.05);
+}
+
+/* ====== Info Section ====== */
+.gallery-info {
+  padding: 15px;
+}
+
+.gallery-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.gallery-info p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+.gallery-info a {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+.gallery-info a:hover {
+  text-decoration: underline;
+}
+
+.testimonial {
+  font-style: italic;
+  color: #444;
+  margin-top: 8px;
+  background: #f1f8f4;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}

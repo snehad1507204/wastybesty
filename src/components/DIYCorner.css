@@ -1,0 +1,76 @@
+.diy-corner {
+  padding: 20px;
+}
+
+.diy-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto fixed, 1fr); /* 3 cards per row */
+  gap: 20px;                             /* spacing between cards */
+}
+
+.diy-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.diy-header h3 {
+  margin-bottom: 5px;
+}
+
+.diy-header p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.diy-header button {
+  background-color: #39b46e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.diy-header button:hover {
+  background-color: #2e8c50;
+}
+
+.diy-details {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.diy-details ul {
+  padding-left: 20px;
+}
+
+.diy-details-tab {
+  margin-top: 30px;
+  padding: 20px;
+  background: #eef6f1;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.diy-details-tab ul {
+  padding-left: 20px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .diy-list.grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .diy-list.grid {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+  }
+}

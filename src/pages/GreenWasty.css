@@ -1,0 +1,237 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.greenwasty {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-image: url('https://thumbs.dreamstime.com/b/full-container-organic-green-waste-kitchen-different-fruits-vegetables-home-gardening-reusing-composting-process-to-388301430.jpg');
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn.primary {
+  background: #2e7d32;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #1b5e20;
+}
+
+.btn.secondary {
+  background: #ffffff;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+.btn.secondary:hover {
+  background: #f1f8e9;
+}
+
+/* Introduction Section */
+.intro {
+  text-align: center;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.intro p {
+  max-width: 750px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.intro-features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  display: block;           /* Removes inline spacing */
+  width: 100%;
+  height: 150px;            /* Half of card height */
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin: 0;                /* No margin */
+  padding: 0;               /* No padding */
+}
+
+.feature-card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: #e8f5e9;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: background 0.3s ease;
+}
+
+.card:hover {
+  background: #c8e6c9;
+}
+
+
+/* Categories Section */
+
+.cat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* DIY Section */
+.diy {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.diy-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.diy-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.diy-card:hover {
+  transform: scale(1.03);
+}
+
+.diy-card button {
+  margin-top: 10px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.diy-card button:hover {
+  background: #1b5e20;
+}
+
+
+/* Impact Section */
+.impact {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.counter span {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  font-weight: bold;
+}
+

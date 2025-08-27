@@ -1,0 +1,62 @@
+.blog-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #f0fdf4; /* Light green background */
+  color: #1f2937;
+  font-family: 'Poppins', sans-serif;
+}
+
+.back-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(22, 101, 52, 0.2);
+}
+
+.blog-title {
+  font-size: 2.2rem;
+  color: #166534;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.blog-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.blog-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.list-block h3 {
+  font-size: 1.3rem;
+  color: #166534;
+  margin-bottom: 10px;
+}
+
+.list-block ul {
+  list-style: inside square;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.list-block li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* Fade-in + slide animations handled by Framer Motion */
